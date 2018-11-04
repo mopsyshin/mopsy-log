@@ -1,0 +1,25 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  font-size: 16px;
+}
+body {
+
+}
+div {
+  box-sizing: border-box;
+}
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$mopsy-blue: #132CF5;
+$nl100: rgba(255,255,255,1);
