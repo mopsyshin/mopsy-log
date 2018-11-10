@@ -19,7 +19,9 @@
       </div>
     </div>
     <div class="wrapper-main-links">
-      <btn-main-link/>
+      <btn-main-link :message="'Project'"/>
+      <btn-main-link :message="'Career'"/>
+      <btn-main-link :message="'Blog'"/>
     </div>
   </section>
 </template>
@@ -29,11 +31,6 @@ import IconMoreInfo from '~/components/icons/IconMoreInfo';
 import BtnMainLink from '~/components/BtnMainLink';
 
 export default {
-  mounted() {
-    const width = this.$refs.logoWrapper.getClientRects()[0].width;
-    console.log(width);
-    this.$refs.logoWrapper.style.height = `${width}px`;
-  },
   components: {
     IconMoreInfo,
     BtnMainLink,
@@ -45,24 +42,35 @@ export default {
 @import '../assets/css/main.scss';
 
 .container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  @extend %flex-center;
   .profile-summery {
     width: 100%;
+    max-width: 720px;
     padding: 0 24px;
     margin-top: 24px;
-    display: flex;
+    @extend %flex-center;
+    align-items: flex-start;
     .wrapper-logo {
-      width: calc(100vw - 48px - 177px);
+      width: 50%;
+      height: 50vw;
+      min-height: 180px;
+      max-height: 300px;
       border: 1px solid #f6f6f6;
-      @extend %flex-center
+      @extend %flex-center;
     }
     .wrapper-profile-box {
       position: relative;
-      width: 177px;
-      height: 177px;
+      width: 50%;
+      height: 50vw;
+      min-height: 180px;
+      max-height: 300px;
       padding: 8px 16px;
       background-color: $mopsy-blue;
       color: $nl100;
-      transform: translateY(50%);
+      margin-top: 150px;
       .title {
         font-size: 24px;
         font-weight: 700;
@@ -75,7 +83,15 @@ export default {
     }
   }
   .wrapper-main-links {
-    margin-top: 150px;
+    padding: 32px 24px;
+    width: 100%;
+    @extend %flex-center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 910px ) {
+  .container {
+    flex-direction: column;
   }
 }
 </style>
