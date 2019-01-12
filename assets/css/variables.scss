@@ -1,0 +1,8 @@
+@mixin flex($valign, $halign) {
+  display: flex;
+  justify-content: $halign;
+  align-items: $valign;
+}
+
+$mopsy-blue: #132CF5;
+$nl100: rgba(255,255,255,1);

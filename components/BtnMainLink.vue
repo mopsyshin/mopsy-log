@@ -1,7 +1,7 @@
 <template>
-  <div class="container-main-link" :class="{touch: isTouch}" ref="target">
+  <div class="container-main-link" :class="{touch: isTouch}" ref="target" @click="toUrl(name)">
     <div class="title">
-      {{ message }}
+      {{ name }}
       <div class="bar"></div>
     </div>
     <div class="wrapper-arrow">
@@ -16,7 +16,7 @@ import TouchAction from '~/components/mixin/TouchAction.js';
 export default {
   name: "BtnMainLink",
   props: {
-    message: {
+    name: {
       default: '',
     },
   },
@@ -27,6 +27,16 @@ export default {
   },
   mounted() {
     this.touchAction(this.$refs.target);
+  },
+  methods: {
+    toUrl(target) {
+      if (target === 'Home') {
+        this.$router.push('/');
+      } else {
+        this.$router.push('/' + target);
+      }
+      this.$gnb.$emit('toggleGnb', false);
+    },
   },
   mixins: [
     TouchAction,

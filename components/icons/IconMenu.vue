@@ -1,5 +1,5 @@
 <template>
-  <div class="area-ic-menu" :class="{ active : isActive }" @click="activate">
+  <div class="area-ic-menu" :class="{ active : isActive }" @click="toggleGnb">
     <div class="wrapper">
       <div class="bar top"></div>
       <div class="bar mid first"></div>
@@ -12,14 +12,15 @@
 <script>
 export default {
   name: "IconMenu",
-  data() {
-    return {
-      isActive: false,
-    };
+  props: {
+    isActive: {
+      default: false,
+      isRequired: true,
+    },
   },
   methods: {
-    activate() {
-      this.isActive = !this.isActive;
+    toggleGnb() {
+      this.$emit('toggleGnb', !this.isActive);
     }
   }
 }
@@ -30,6 +31,7 @@ export default {
   width: 48px;
   height: 48px;
   position: relative;
+  z-index: 200;
   display: flex;
   justify-content: center;
   align-items: center;

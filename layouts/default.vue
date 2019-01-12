@@ -1,12 +1,14 @@
 <template>
   <div class="container-1440">
     <Gnb/>
-    <nuxt/>
+    <div class="main-container">
+      <nuxt/>
+    </div>
   </div>
 </template>
 
 <script>
-import Gnb from '~/components/Gnb';
+import Gnb from '~/components/gnb/Gnb';
 
 export default {
   name: "NavHeader",
@@ -16,18 +18,16 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/css/main.scss';
+
 .container-1440 {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
-  @extend %flex-center;
 }
-@media (max-width: 910px ) {
-  .container-1440 {
-    align-items: flex-start;
-  }
+.main-container {
+  padding-top: 48px;
 }
 </style>

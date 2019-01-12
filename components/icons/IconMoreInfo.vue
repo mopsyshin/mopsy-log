@@ -31,13 +31,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/css/main.scss';
-
 .area-ic-more-info {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  @extend %flex-center;
+  @include flex(center, center);
   background-color: #F1FF7A;
   position: absolute;
   bottom: 12px;
