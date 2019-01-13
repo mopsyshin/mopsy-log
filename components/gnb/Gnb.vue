@@ -71,7 +71,7 @@ export default {
   z-index: 100;
   .wrapper {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1280px;
     padding: 0px 16px;
     margin: 0 auto;
     @include flex(center, space-between);

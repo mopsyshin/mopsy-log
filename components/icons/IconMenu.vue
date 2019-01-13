@@ -37,9 +37,9 @@ export default {
   align-items: center;
   cursor: pointer;
   border-radius: 48px;
-  transition: all 0.2s;
+  transition: all 0.3s;
   &:hover {
-    background-color: #f6f6f6;
+    background-color: $nd06;
   }
   .wrapper {
     .bar {

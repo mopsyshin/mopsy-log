@@ -20,7 +20,7 @@
     </div>
     <div class="wrapper-main-links">
       <btn-main-link :name="'Project'"/>
-      <btn-main-link :name="'Career'"/>
+      <btn-main-link :name="'About'"/>
       <btn-main-link :name="'Blog'"/>
     </div>
   </section>
@@ -31,6 +31,10 @@ import IconMoreInfo from '~/components/icons/IconMoreInfo';
 import BtnMainLink from '~/components/BtnMainLink';
 
 export default {
+  transition: {
+    name: 'root',
+    mode: 'out-in',
+  },
   components: {
     IconMoreInfo,
     BtnMainLink,
@@ -39,6 +43,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.root-enter {
+  opacity: 0;
+  transform: translateX(-5vw);
+}
+.root-enter-active {
+  transition: all 0.8s ease;
+}
 .home-container {
   position: relative;
   width: 100%;
@@ -62,6 +73,10 @@ export default {
       border-radius: 8px;
       border: 1px solid #f0f0f0;
       @include flex(center, center);
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     .wrapper-profile-box {
       position: relative;
@@ -75,6 +90,10 @@ export default {
       border-radius: 8px;
       background-color: $mopsy-blue;
       color: $nl100;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
       .title {
         font-size: 24px;
         font-weight: 700;
@@ -93,7 +112,7 @@ export default {
     flex-direction: column;
   }
 }
-@media (max-width: 910px ) {
+@media (max-width: 1280px ) {
   .home-container {
     top: 0;
     flex-direction: column;

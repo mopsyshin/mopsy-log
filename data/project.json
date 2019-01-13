@@ -1,0 +1,52 @@
+{
+  "project": [
+    {
+      "title": "Winepoint",
+      "desc": "와인을 고르는 손안의 즐거움",
+      "imgUrl": "/_nuxt/assets/images/winepoint.png",
+      "link": "https://www.winepoint.co.kr/",
+      "position": "UX Engineer",
+      "period": "2018.09 ~"
+    },
+    {
+      "title": "여기어때 액티비티",
+      "desc": "여기어때에서 세상의 모든 즐거운 경험을",
+      "imgUrl": "/_nuxt/assets/images/yeogi.png",
+      "link": "https://itunes.apple.com/kr/app/yeogieottae-1deung-sugbag/id884043462?mt=8&ign-mpt=uo%3D2",
+      "position": "UX/UI Designer",
+      "period": "2018.02 ~ 2018.09"
+    },
+    {
+      "title": "Redot",
+      "desc": "3rd Generation Community",
+      "imgUrl": "/_nuxt/assets/images/redot.png",
+      "link": "",
+      "position": "Design Lead",
+      "period": "2017.08 ~ 2017.12"
+    },
+    {
+      "title": "08Liter",
+      "desc": "경험 공유 커머스",
+      "imgUrl": "/_nuxt/assets/images/08liter.png",
+      "link": "https://www.08liter.com/",
+      "position": "UX/UI Designer",
+      "period": "2017.02 ~ 2017.08"
+    },
+    {
+      "title": "모두의셔틀",
+      "desc": "출근셔틀 예약서비스",
+      "imgUrl": "/_nuxt/assets/images/modoo.png",
+      "link": "https://www.modooshuttle.com/",
+      "position": "Co-founder / Designer",
+      "period": "2016.05 ~ 2017.01"
+    },
+    {
+      "title": "BBuzzArt",
+      "desc": "SNS for Emerging Artist",
+      "imgUrl": "/_nuxt/assets/images/bbuzzart.png",
+      "link": "https://www.bbuzzart.com/",
+      "position": "UX/UI Designer",
+      "period": "2015.06 ~ 2016.04"
+    }
+  ]
+}

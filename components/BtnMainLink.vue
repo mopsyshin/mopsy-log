@@ -55,7 +55,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 8px 24px 8px 32px;
-  background-color: rgba(0,0,0,0.04);
+  background-color: $nd04;
   margin: 12px 0px;
   cursor: pointer;
   &.touch {
@@ -85,7 +85,7 @@ export default {
     align-items: center;
   }
 }
-  @media (max-width: 910px ) {
+  @media (max-width: 1280px ) {
     .container-main-link {
       max-width: 100%;
     }

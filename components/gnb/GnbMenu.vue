@@ -3,7 +3,7 @@
     <div class="wrapper-main-links">
       <btn-main-link :name="'Home'"/>
       <btn-main-link :name="'Project'"/>
-      <btn-main-link :name="'Career'"/>
+      <btn-main-link :name="'About'"/>
       <btn-main-link :name="'Blog'"/>
     </div>
   </div>
@@ -38,11 +38,12 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.96);
+  box-shadow: 0px 6px 24px $blue-shadow;
   .wrapper-main-links {
     padding: 52px 24px 32px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     @include flex(flex-start, center);
     flex-direction: column;

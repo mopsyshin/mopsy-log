@@ -6,7 +6,6 @@
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-weight: 400;
@@ -15,7 +14,6 @@
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-weight: 300;
@@ -24,7 +22,6 @@
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
 }
-
 @font-face {
   font-family: 'Spoqa Han Sans';
   font-weight: 100;
@@ -33,7 +30,6 @@
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
   url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
 }
-
 html {
   font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
   font-size: 16px;
@@ -46,16 +42,15 @@ div {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
-
 .page-enter {
   opacity: 0;
-  transform: translateY(-30px);
+  transform: translateX(5vw);
 }
 .page-enter-active {
-  transition: all 0.3s;
+  transition: all 0.6s ease;
 }
 .page-leave-active {
   opacity: 0;
-  transform: translateY(-30px);
-  transition: all 0.3s;
+  transform: translateX(-30vw);
+  transition: all 0.4s;
 }
