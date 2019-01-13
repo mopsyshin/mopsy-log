@@ -1,20 +1,21 @@
 <template>
-  <div>
-    <div v-html="contents">
+  <div class="container-project-detail">
+    <div class="title">
+
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  layout: 'detail',
+  name: '',
   props: {
-    md: {
-      isRequired: true,
-    },
+
   },
   data () {
     return {
-      contents: this.md,
+
     };
   },
   methods: {

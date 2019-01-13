@@ -1,20 +1,18 @@
 <template>
   <div>
-    <div v-html="contents">
-    </div>
+    Modoo
   </div>
 </template>
 
 <script>
 export default {
+  name: '',
   props: {
-    md: {
-      isRequired: true,
-    },
+
   },
   data () {
     return {
-      contents: this.md,
+
     };
   },
   methods: {
@@ -28,4 +26,5 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+
 </style>

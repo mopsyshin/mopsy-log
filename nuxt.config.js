@@ -49,5 +49,20 @@ module.exports = {
   ],
   modules: [
     [ 'nuxt-sass-resources-loader', path.resolve(__dirname, 'assets/css/variables.scss') ],
-  ]
+    '@nuxtjs/markdownit',
+  ],
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    highlight: function (str, lang) {
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return hljs.highlight(lang, str).value;
+        } catch (__) {}
+      }
+  
+      return ''; // use external default escaping
+    }
+  }
 }

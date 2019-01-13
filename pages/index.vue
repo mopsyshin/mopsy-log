@@ -31,10 +31,6 @@ import IconMoreInfo from '~/components/icons/IconMoreInfo';
 import BtnMainLink from '~/components/BtnMainLink';
 
 export default {
-  transition: {
-    name: 'root',
-    mode: 'out-in',
-  },
   components: {
     IconMoreInfo,
     BtnMainLink,
@@ -43,13 +39,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.root-enter {
-  opacity: 0;
-  transform: translateX(-5vw);
-}
-.root-enter-active {
-  transition: all 0.8s ease;
-}
 .home-container {
   position: relative;
   width: 100%;

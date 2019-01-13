@@ -1,14 +1,16 @@
 <template>
-  <div class="fixed-container">
-    <div class="layout-container">
-      <Gnb/>
-      <div class="main-container">
-        <nuxt/>
+  <div>
+    <Gnb/>
+    <div class="fixed-container">
+      <div class="layout-container">
+        <div class="main-container">
+          <nuxt/>
+        </div>
       </div>
+      <transition name="fade" mode="out-in" appear>
+        <detail-modal/>
+      </transition>
     </div>
-    <transition name="fade" mode="out-in" appear>
-      <detail-modal/>
-    </transition>
   </div>
 </template>
 
@@ -38,7 +40,8 @@ export default {
 .fixed-container {
   position: fixed;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: auto;
 }
 .layout-container {
   width: 100%;

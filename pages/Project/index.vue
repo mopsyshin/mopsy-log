@@ -13,20 +13,14 @@
 <script>
 import PageTitle from '~/components/PageTitle';
 import ProjectCard from '~/components/card/ProjectCard';
-import PojectData from '~/data/project.json';
+import PojectData from '~/data/project.js';
 
 export default {
   name: 'project',
-  props: {
-
-  },
   data () {
     return {
-      projects: PojectData.project,
+      projects: PojectData,
     };
-  },
-  methods: {
-
   },
   components: {
     PageTitle,

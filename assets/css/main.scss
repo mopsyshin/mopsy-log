@@ -40,11 +40,12 @@ body {
 }
 div {
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: transparent;
 }
 .page-enter {
   opacity: 0;
-  transform: translateX(5vw);
+  transform: translateX(-30vw);
 }
 .page-enter-active {
   transition: all 0.6s ease;

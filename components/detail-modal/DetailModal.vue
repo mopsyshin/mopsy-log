@@ -29,18 +29,19 @@ export default {
   },
   mounted() {
     this.$detailmodal.$on('toggleModal', this.toggleModal);
-    document.querySelector('.fixed-container').style.overflow = "hidden";
   },
   methods: {
     toggleModal(payload) {
       if (payload.modalState === false) {
         this.leaveState = true;
+        document.querySelector('.fixed-container').style.overflow = "auto";
         setTimeout(() => {
           this.modalState = payload.modalState;
           this.contents = payload.contents;
           this.leaveState = false;
         }, 300)
       } else {
+        document.querySelector('.fixed-container').style.overflow = "hidden";
         this.modalState = payload.modalState;
         this.contents = payload.contents;
       }

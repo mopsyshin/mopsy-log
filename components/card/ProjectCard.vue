@@ -1,7 +1,7 @@
 <template>
-  <div class="container-project-card" @click="toggleModal">
+  <div class="container-project-card" @click="toDetail">
     <div class="image-area">
-      <img :src="contents.imgUrl" alt="">
+      <img :src="imgUrl" alt="">
     </div>
     <div class="title">
       {{ contents.title }}
@@ -21,12 +21,18 @@ export default {
       type: Object,
     }
   },
-  data () {
+  data() {
     return {
-
-    };
+      imgUrl: '',
+    }
+  },
+  mounted() {
+    this.imgUrl = this.contents.imgUrl;
   },
   methods: {
+    toDetail() {
+      this.$router.push('/Project/' + this.contents.route);
+    },
     toggleModal() {
       const payload = {
         modalState: true,
@@ -70,19 +76,19 @@ export default {
   .title {
     margin-top: 8px;
     font-size: 18px;
-    color: #5f757e;
+    color: $title;
     .position {
       font-size: 14px;
-      color: #98a7b0;
+      color: $desc;
     }
   }
   .desc {
     font-size: 14px;
-    color: #98a7b0;
+    color: $desc;
   }
   .period {
     font-size: 12px;
-    color: #aab7be;
+    color: $sub;
   }
 }
 @media (max-width: 1280px) {
@@ -107,10 +113,6 @@ export default {
     max-width: 600px;
     .image-area {
       height: 180px;
-      img {
-        height: 100%;
-        width: auto;
-      }
     }
   }
 }
