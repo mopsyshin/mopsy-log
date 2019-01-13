@@ -1,7 +1,7 @@
 <template>
   <div class="container-detail-modal" v-if="modalState" :class="{'leave-active': leaveState}">
     <div class="box-detail-modal">
-      {{ contents }}
+      <detail-layout :md="contents.md"/>
     </div>
     <div class="bg" @click="toggleModal({ modalState: false })"></div>
   </div>
@@ -9,6 +9,7 @@
 
 <script>
 import Vue from 'vue';
+import DetailLayout from './DetailLayout';
 
 const DetailModal = new Vue();
 Object.defineProperties(Vue.prototype, {
@@ -54,7 +55,7 @@ export default {
     },
   },
   components: {
-
+    DetailLayout,
   },
 };
 
