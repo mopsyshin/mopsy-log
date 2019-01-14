@@ -1,10 +1,12 @@
 <template>
   <div>
-    About
+    <page-title title="About"/>
   </div>
 </template>
 
 <script>
+import PageTitle from '~/components/PageTitle';
+
 export default {
   name: '',
   props: {
@@ -19,7 +21,7 @@ export default {
   
   },
   components: {
-
+    PageTitle,
   },
 };
 

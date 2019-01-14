@@ -1,7 +1,6 @@
 <template>
   <div class="gnb-menu-container">
     <div class="wrapper-main-links">
-      <btn-main-link :name="'Home'"/>
       <btn-main-link :name="'Project'"/>
       <btn-main-link :name="'About'"/>
       <btn-main-link :name="'Blog'"/>
@@ -13,18 +12,6 @@
 import BtnMainLink from '~/components/BtnMainLink';
 
 export default {
-  name: '',
-  props: {
-
-  },
-  data () {
-    return {
-
-    };
-  },
-  methods: {
-  
-  },
   components: {
     BtnMainLink,
   },
@@ -45,7 +32,7 @@ export default {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    @include flex(flex-start, center);
+    @include flex(flex-end, center);
     flex-direction: column;
   }
 }

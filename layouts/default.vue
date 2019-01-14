@@ -50,7 +50,7 @@ export default {
   min-height: 100vh;
 }
 .main-container {
-  padding-top: 48px;
+  padding-top: 60px;
 }
 
 @media (max-width: 1280px) {

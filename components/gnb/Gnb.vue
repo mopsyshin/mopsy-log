@@ -2,9 +2,12 @@
   <div class="container-gnb">
     <div class="wrapper">
       <div class="items left-side">
-        <icon-menu :isActive="gnbState" @toggleGnb="toggleGnb"/>
+        <div class="logo-wrapper" @click="$router.push('/')">
+          <img src="~/assets/images/logo_m.svg">
+        </div>
       </div>
       <div class="items right-side">
+        <icon-menu :isActive="gnbState" @toggleGnb="toggleGnb"/>
       </div>
     </div>
     <transition name="gnb-menu">
@@ -77,6 +80,22 @@ export default {
     @include flex(center, space-between);
     .items {
       @include flex(center, center);
+      .logo-wrapper {
+        position: relative;
+        z-index: 100;
+        width: 48px;
+        height: 48px;
+        @include flex(center, center);
+        border-radius: 48px;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: $nd04;
+        }
+        img {
+          width: 24px;
+        }
+      }
     }
   }
 
