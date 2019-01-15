@@ -6,15 +6,15 @@ import modooImg from '~/assets/images/modoo.png';
 import bbuzzartImg from '~/assets/images/bbuzzart.png';
 
 const project = [
-  {
-    "title": "Winepoint",
-    "route": "Winepoint",
-    "desc": "와인을 고르는 손안의 즐거움",
-    "imgUrl": wpImg,
-    "link": "https://www.winepoint.co.kr/",
-    "position": "UX Engineer",
-    "period": "2018.09 ~",
-  },
+  // {
+  //   "title": "Winepoint",
+  //   "route": "Winepoint",
+  //   "desc": "와인을 고르는 손안의 즐거움",
+  //   "imgUrl": wpImg,
+  //   "link": "https://www.winepoint.co.kr/",
+  //   "position": "UX Engineer",
+  //   "period": "2018.09 ~",
+  // },
   {
     "title": "여기어때 액티비티",
     "route": "Yeogi",

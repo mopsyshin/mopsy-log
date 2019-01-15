@@ -45,7 +45,7 @@ module.exports = {
     mode: 'out-in',
   },
   css: [
-    // { src: '~assets/css/main.scss', lang: 'scss'}
+    { src: '~assets/css/main.scss', lang: 'scss'}
   ],
   modules: [
     [ 'nuxt-sass-resources-loader', path.resolve(__dirname, 'assets/css/variables.scss') ],

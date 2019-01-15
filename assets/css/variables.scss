@@ -4,7 +4,7 @@
   align-items: $valign;
 }
 
-$mopsy-blue: #132cf5;
+$mopsy-blue: rgb(19, 44, 245);
 $blue-shadow: rgba(19,44,245,0.1);
 $nl100: rgba(255,255,255,1);
 $nl90: rgba(255,255,255,0.9);
@@ -34,3 +34,10 @@ $nd100: rgba(0,0,0,1);
 $title: #445055;
 $desc: #767f85;
 $sub: #aab7be;
+$b50: rgba(37, 39, 54, 0.5);
+$b100: rgba(37, 39, 54, 0.6);
+$b200: rgba(37, 39, 54, 0.8);
+$b300: rgba(37, 39, 54, 1);
+$selection: rgba(230, 66, 115, 0.05);
+$y100: #F1FF7A;
+$y100bg: rgba(255, 255, 163, 0.5);

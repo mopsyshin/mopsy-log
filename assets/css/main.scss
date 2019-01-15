@@ -56,6 +56,6 @@ div {
   transition: all 0.4s;
 }
 ::selection {
-  background: rgba(255, 255, 163, 0.5);
+  background-color: $selection;
   color: $mopsy-blue;
 }

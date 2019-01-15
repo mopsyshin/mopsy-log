@@ -68,12 +68,13 @@ export default {
     font-size: 36px;
     font-weight: 700;
     transform: translateY(-4px);
+    color: $b300;
   }
   .bar {
     display: inline-block;
     width: 60px;
     height: 48px;
-    border-bottom: 4px solid #000000;
+    border-bottom: 4px solid $b300;
   }
   .wrapper-arrow {
     width: 40px;

@@ -36,7 +36,7 @@ export default {
   height: 40px;
   border-radius: 40px;
   @include flex(center, center);
-  background-color: #F1FF7A;
+  background-color: $y100;
   position: absolute;
   bottom: 12px;
   right: 12px;
@@ -45,7 +45,7 @@ export default {
   .bar {
     width: 18px;
     height: 3px;
-    background-color: #333333;
+    background-color: $b300;
     border-radius: 3px;
     position:absolute;
     transition: all 0.3s;

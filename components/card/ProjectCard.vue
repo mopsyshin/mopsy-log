@@ -76,19 +76,19 @@ export default {
   .title {
     margin-top: 8px;
     font-size: 18px;
-    color: $title;
+    color: $b300;
     .position {
       font-size: 14px;
-      color: $desc;
+      color: $b100;
     }
   }
   .desc {
     font-size: 14px;
-    color: $desc;
+    color: $b100;
   }
   .period {
     font-size: 12px;
-    color: $sub;
+    color: $b50;
   }
 }
 @media (max-width: 1280px) {
