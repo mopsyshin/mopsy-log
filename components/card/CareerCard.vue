@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     toDetail() {
-      this.$router.push('/Project/' + this.contents.route);
+      this.$router.push('/Career/' + this.contents.route);
     },
     toggleModal() {
       const payload = {
