@@ -45,17 +45,17 @@ div {
 }
 .page-enter {
   opacity: 0;
-  transform: translateX(-10vw);
+  transform: translateY(-40px);
 }
 .page-enter-active {
   transition: all 0.6s ease;
 }
 .page-leave-active {
   opacity: 0;
-  transform: translateX(-10vw);
+  transform: translateY(-40px);
   transition: all 0.4s;
 }
 ::selection {
-  background-color: $selection;
+  background-color: $y100bg;
   color: $mopsy-blue;
 }

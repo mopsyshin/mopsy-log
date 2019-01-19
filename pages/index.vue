@@ -13,27 +13,22 @@
           Front-end Developer<br/>
           Service Builder
         </div>
-        <div class="ic-more-profile">
-          <icon-more-info/>
-        </div>
       </div>
     </div>
     <div class="wrapper-main-links">
-      <btn-main-link :name="'About'"/>
-      <btn-main-link :name="'Career'"/>
-      <btn-main-link :name="'Project'"/>
-      <btn-main-link :name="'Blog'"/>
+      <btn-main-link name="About"/>
+      <btn-main-link name="Career"/>
+      <btn-main-link name="Project"/>
+      <btn-main-link name="Blog"/>
     </div>
   </section>
 </template>
 
 <script>
-import IconMoreInfo from '~/components/icons/IconMoreInfo';
 import BtnMainLink from '~/components/BtnMainLink';
 
 export default {
   components: {
-    IconMoreInfo,
     BtnMainLink,
   },
 }

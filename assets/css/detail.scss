@@ -1,22 +1,37 @@
 .container-detail {
   width: 100%;
-  max-width: 768px;
+  max-width: 1280px;
   min-height: calc(100vh - 120px);
   margin: 0 auto 60px;
-  padding: 64px 24px;
+  padding: 64px 28px;
   font-size: 16px;
-  border: 1px solid $nd08;
   .title {
     font-size: 36px;
     line-height: 1.4;
     letter-spacing: -1px;
     font-weight: 600;
     color: $b300;
+    padding-bottom: 36px;
+    width: 100%;
+    max-width: 768px;
+    .sub-title {
+      font-size: 16px;
+      font-weight: 400;
+      color: $b100;
+    }
+  }
+  .bar {
+    background-color: $nd08;
+    width: 400px;
+    height: 1px;
   }
   .body {
+    word-break: keep-all;
     font-size: 18px;
     margin-top: 24px;
     line-height: 1.8;
+    width: 100%;
+    max-width: 768px;
     p {
       margin: 0.6em 0 0.6rem;
       font-weight: 400;
@@ -30,12 +45,12 @@
       font-weight: 400;
       color: $mopsy-blue;
       text-decoration: none;
-      background-color: $y100bg;
+      background-color: $nd04;
       border-radius: 20px;
-      padding: 0px 8px;
+      padding: 2px 16px;
       &:visited {
         color: $mopsy-blue;
-        background-color: $y100bg;
+        background-color: $nd04;
       }
     }
     h1, h2, h3, h4 {

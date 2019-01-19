@@ -28,16 +28,18 @@ export default {
 
 <style lang="scss" scoped>
 .area-ic-menu {
+  display: none;
   width: 48px;
   height: 48px;
   position: relative;
   z-index: 200;
-  display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   border-radius: 48px;
   transition: all 0.3s;
+  background-color: $nl80;
+  box-shadow: 0px 4px 24px rgba(255,255,255,1);
   &:hover {
     background-color: $nd06;
   }
@@ -76,6 +78,11 @@ export default {
         transform: rotate(-135deg);
       }
     }
+  }
+}
+@media (max-width: 768px ) {
+  .area-ic-menu{
+    display: flex;
   }
 }
 </style>

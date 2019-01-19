@@ -8,6 +8,15 @@
       </div>
       <div class="items right-side">
         <icon-menu :isActive="gnbState" @toggleGnb="toggleGnb"/>
+        <div class="gnb-menu-desktop">
+          <div class="menu-item"
+               v-for="item in gnbMenuItems" 
+               :key="item.key"
+               :class="{ 'active' : currentRoute === item }"
+               @click="toUrl(item)">
+            {{ item }} _
+          </div>
+        </div>
       </div>
     </div>
     <transition name="gnb-menu">
@@ -34,12 +43,27 @@ export default {
   data() {
     return {
       gnbState: false,
+      gnbMenuItems: [
+        'About',
+        'Career',
+        'Project',
+        'Blog',
+      ],
+      currentRoute: '',
     }
+  },
+  watch: {
+    '$route' (to, from) {
+      this.currentRoute = to.name;
+    },
   },
   created() {
     this.$gnb.$on('toggleGnb', this.toggleGnb);
   },
   methods: {
+    toUrl(path) {
+      this.$router.push(`/${path}`);
+    },
     toggleGnb(state) {
       this.gnbState = state;
     },
@@ -64,6 +88,20 @@ export default {
   opacity: 0;
   transform: translateY(-10%);
 }
+.gnb-menu-desktop {
+  @include flex(center, flex-start);
+  margin-right: 24px;
+  .menu-item {
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 48px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &.active {
+      color: $mopsy-blue;
+    }
+  }
+}
 .container-gnb {
   width: 100%;
   height: 60px;
@@ -86,6 +124,8 @@ export default {
         width: 48px;
         height: 48px;
         @include flex(center, center);
+        background-color: $nl80;
+        box-shadow: 0px 4px 24px rgba(255,255,255,1);
         border-radius: 48px;
         transition: all 0.3s;
         cursor: pointer;
@@ -98,6 +138,10 @@ export default {
       }
     }
   }
-
 }
+@media (max-width: 768px ) {
+  .gnb-menu-desktop {
+    display: none;
+  }
+} 
 </style>
