@@ -30,8 +30,9 @@ export default {
   },
   methods: {
     toUrl(target) {
-      if (target === 'Home') {
-        this.$router.push('/');
+      if (target === 'Blog') {
+        window.open('https://velog.io/@mopsy');
+        return false;
       } else {
         this.$router.push('/' + target);
       }

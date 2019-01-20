@@ -50,9 +50,9 @@ export default {
 
 <style lang='scss' scoped>
 .container-project-card {
-  width: 33%;
+  width: 100%;
   max-width: 360px;
-  margin: 0 36px 32px;
+  margin: 0 8px 32px;
   cursor: pointer;
   .image-area {
     position: relative;
@@ -61,6 +61,7 @@ export default {
     overflow: hidden;
     border: 1px solid $nd08;
     border-radius: 16px;
+    background-color: $nl100;
     img {
       height: 100%;
       position: absolute;

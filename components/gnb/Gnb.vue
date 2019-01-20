@@ -62,6 +62,10 @@ export default {
   },
   methods: {
     toUrl(path) {
+      if (path === 'Blog') {
+        window.open('https://velog.io/@mopsy');
+        return false;
+      }
       this.$router.push(`/${path}`);
     },
     toggleGnb(state) {
@@ -107,12 +111,11 @@ export default {
   height: 60px;
   position: fixed;
   @include flex(center, center);
-  top: 0;
+  top: 8px;
   left: 0;
   z-index: 100;
   .wrapper {
     width: 100%;
-    max-width: 1280px;
     padding: 0px 16px;
     margin: 0 auto;
     @include flex(center, space-between);

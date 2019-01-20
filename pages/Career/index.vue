@@ -1,5 +1,5 @@
 <template>
-  <div class="container-career">
+  <div class="container-responsive">
     <page-title title="Career"/>
     <div class="career-list">
       <career-card  v-for="career in careers"
@@ -32,17 +32,16 @@ export default {
 
 <style lang="scss" scoped>
 .career-list {
-  margin: 0 -36px;
-  margin-top: 16px;
-  @include flex(center, center);
+  width: 100%;
+  padding: 0 4px;
+  @include flex(center, flex-start);
   flex-wrap: wrap;
+  margin: 32px auto;
 }
 @media (max-width: 1280px) {
   .career-list {
-    margin: 0;
-    margin-top: 8px;
     @include flex(center, space-between);
-    padding: 0 28px;
+    padding: 0 20px;
   }
 }
 </style>

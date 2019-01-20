@@ -1,6 +1,5 @@
 <template>
   <div class="container-project">
-    <page-title title="Project"/>
     <div class="project-list">
     
     </div>

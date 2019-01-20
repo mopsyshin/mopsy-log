@@ -1,17 +1,12 @@
 <template>
 <div>
-  <page-title title="About"/>
   <div class="container-about">
     <div class="body">
       <h2 class="name">
-        신동주
-        <span>Mopsy</span>
+        Mopsy
       </h2>
       <p>
         서비스 기획 - 디자인 - 개발 전 과정에 적극적으로 참여하는 것을 즐기고, 혼자서 MVP를 만들 수 있는 역량을 갖추는 것이 1차 목표. 2014년부터 다양한 규모의 스타트업에서 디자이너로 활동하였으며, 2018년부터는 프론트엔드 개발을 병행하여 현재는 와인포인트에서 UX/UI Designer 겸 Frontend Developer로 일하고 있다.
-      </p>
-      <p>
-        20대까지는 상당한 근본/원리주의 성향을 가졌었으나, 시간이 지나고 경험이 쌓일수록 상황에 따른 적정 기술과 적정 능력의 중요성을 깨달아가는 중.
       </p>
       <p>
         어떤 상황이든 문제를 파악하고 해결하기 위한 최적이 아닌 최선의 방법을 찾으려 노력하며, 다양한 사람들 간의 활발하고 장벽없는 커뮤니케이션이 그것을 가능하게 해줄 것이라는 믿음을 갖고 있다.
@@ -138,7 +133,7 @@ export default {
 <style lang='scss' scoped>
 .container-about {
   width: 100%;
-  max-width: 1280px;
+  max-width: 768px;
   min-height: calc(100vh - 120px);
   margin: 0 auto 60px;
   font-size: 16px;
@@ -156,8 +151,6 @@ export default {
     font-size: 18px;
     margin-top: 24px;
     line-height: 1.8;
-    width: 100%;
-    max-width: 768px;
     .abilities {
       @include flex(flex-start, space-between);
       flex-wrap: wrap;

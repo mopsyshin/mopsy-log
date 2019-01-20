@@ -1,6 +1,7 @@
 <template>
   <div>
     <Gnb/>
+    <div class="frame"></div>
     <div class="fixed-container">
       <div class="layout-container">
         <div class="main-container">
@@ -36,7 +37,15 @@ export default {
   opacity: 0;
   transition: all 0.3s;
 }
-
+.frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  border: 12px solid $nl80;
+}
 .fixed-container {
   position: fixed;
   width: 100%;
@@ -45,7 +54,6 @@ export default {
 }
 .layout-container {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   min-height: 100vh;
 }

@@ -35,6 +35,7 @@ html {
   font-size: 16px;
 }
 body {
+  background-color: $nd04;
   margin: 0;
   padding: 0;
 }
@@ -58,4 +59,31 @@ div {
 ::selection {
   background-color: $y100bg;
   color: $mopsy-blue;
+}
+::-webkit-scrollbar { 
+  display: none; 
+}
+.container-responsive {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 2216px) {
+  .container-responsive{
+    max-width: 1921px;
+  }
+}
+@media (max-width: 1921px) {
+  .container-responsive {
+    max-width: 1532px;
+  }
+}
+@media (max-width: 1532px) {
+  .container-responsive {
+    max-width: 1164px;
+  }
+}
+@media (max-width: 1280px) {
+  .container-responsive {
+    max-width: 768px;
+  }
 }
