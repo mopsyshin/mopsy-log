@@ -20,7 +20,8 @@
   }
   .bar {
     background-color: $nd08;
-    width: 400px;
+    max-width: 400px;
+    width: 70%;
     height: 1px;
   }
   .body {
