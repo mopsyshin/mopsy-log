@@ -1,5 +1,5 @@
 <template>
-  <div class="container-project-card" @click="toDetail">
+  <div class="container-list-card" @click="toDetail">
     <div class="image-area">
       <img :src="imgUrl" alt="">
     </div>
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.container-project-card {
+.container-list-card {
   width: 100%;
   max-width: 360px;
   margin: 0 8px 32px;
@@ -93,7 +93,7 @@ export default {
   }
 }
 @media (max-width: 1280px) {
-  .container-project-card {
+  .container-list-card {
     width: 48%;
     margin: 0 0px 32px;
     .image-area {
@@ -109,7 +109,7 @@ export default {
   }
 }
 @media (max-width: 600px) {
-  .container-project-card {
+  .container-list-card {
     width: 100%;
     max-width: 600px;
     .image-area {

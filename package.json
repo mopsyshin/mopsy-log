@@ -13,19 +13,19 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.3",
-    "@nuxtjs/markdownit-loader": "^1.1.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^4.19.1",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.10.0",
-    "nuxt-sass-resources-loader": "^2.0.5",
-    "sass-loader": "^7.1.0",
-    "style-resources-loader": "^1.2.1"
+    "@nuxtjs/markdownit-loader": "1.1.1",
+    "babel-eslint": "10.0.1",
+    "eslint": "4.19.1",
+    "eslint-friendly-formatter": "4.0.1",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-vue": "4.0.0",
+    "node-sass": "4.10.0",
+    "nuxt-sass-resources-loader": "2.0.5",
+    "sass-loader": "7.1.0",
+    "style-resources-loader": "1.2.1"
   }
 }

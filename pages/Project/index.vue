@@ -1,51 +1,36 @@
 <template>
   <div class="container-responsive">
     <page-title title="Project"/>
-    <div class="body">
-      <p>
-        Coming Soon
-      </p>
+    <div class="card-list">
+      <list-card-item v-for="project in ProjectData"
+                      :key="project.index"
+                      :contents="project"
+                      />
     </div>
   </div>
 </template>
 
 <script>
 import PageTitle from '~/components/PageTitle';
+import ListCardItem from '~/components/card/ListCardItem';
+import ProjectData from '~/data/project.js';
 
 export default {
-  name: 'project',
+  name: 'Project',
   data () {
     return {
-
+      ProjectData,
     };
   },
   components: {
     PageTitle,
+    ListCardItem,
   },
 };
 
 </script>
 
 <style lang="scss" scoped>
-.project-list {
-  margin: 0 -36px;
-  margin-top: 16px;
-  @include flex(center, center);
-  flex-wrap: wrap;
-}
-.body {
-  padding: 0 16px;
-}
-@media (max-width: 768px) {
-  .project-list {
-    margin: 0;
-    margin-top: 8px;
-    @include flex(center, space-between);
-    padding: 0 28px;
-  }
-  .body {
-    padding: 0 24px;
-  }
-}
+
 </style>
 
