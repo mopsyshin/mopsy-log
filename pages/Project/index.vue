@@ -1,7 +1,10 @@
 <template>
-  <div class="container-project">
-    <div class="project-list">
-    
+  <div class="container-responsive">
+    <page-title title="Project"/>
+    <div class="body">
+      <p>
+        Coming Soon
+      </p>
     </div>
   </div>
 </template>
@@ -30,12 +33,18 @@ export default {
   @include flex(center, center);
   flex-wrap: wrap;
 }
-@media (max-width: 1280px) {
+.body {
+  padding: 0 16px;
+}
+@media (max-width: 768px) {
   .project-list {
     margin: 0;
     margin-top: 8px;
     @include flex(center, space-between);
     padding: 0 28px;
+  }
+  .body {
+    padding: 0 24px;
   }
 }
 </style>
