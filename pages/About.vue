@@ -1,6 +1,7 @@
 <template>
 <div>
   <div class="container-about">
+    <page-title title="About"/>
     <div class="body">
       <h2 class="name">
         Mopsy
@@ -143,11 +144,11 @@ export default {
     letter-spacing: -1px;
     font-weight: 600;
     color: $b300;
-    padding: 0 24px;
+    padding: 0 16px;
   }
   .body {
     word-break: keep-all;
-    padding: 0 24px;
+    padding: 0 16px;
     font-size: 18px;
     margin-top: 24px;
     line-height: 1.8;
@@ -202,15 +203,16 @@ export default {
     }
   }
 }
-@media (max-width:420px) {
-  .container-detail {
+@media (max-width:768px) {
+  .container-about {
     margin: 0 auto;
-    padding: 32px 24px;
+    padding: 0px;
     .title {
       font-size: 28px;
     }
     .body {
       font-size: 15px;
+      padding: 0 24px;
     }
   }
 }

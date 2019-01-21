@@ -39,7 +39,6 @@ export default {
   border-radius: 48px;
   transition: all 0.3s;
   background-color: $nl80;
-  box-shadow: 0px 4px 24px rgba(255,255,255,1);
   &:hover {
     background-color: $nd06;
   }

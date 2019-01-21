@@ -44,7 +44,7 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-  border: 12px solid $nl80;
+  border: 12px solid $nd04;
 }
 .fixed-container {
   position: fixed;

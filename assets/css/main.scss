@@ -35,7 +35,6 @@ html {
   font-size: 16px;
 }
 body {
-  background-color: $nd04;
   margin: 0;
   padding: 0;
 }
@@ -65,14 +64,15 @@ div {
 }
 .container-responsive {
   width: 100%;
+  max-width: 2268px;
   margin: 0 auto;
 }
-@media (max-width: 2216px) {
+@media (max-width: 2268px) {
   .container-responsive{
-    max-width: 1921px;
+    max-width: 1900px;
   }
 }
-@media (max-width: 1921px) {
+@media (max-width: 1900px) {
   .container-responsive {
     max-width: 1532px;
   }

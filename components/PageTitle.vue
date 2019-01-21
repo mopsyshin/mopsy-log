@@ -19,7 +19,7 @@ export default {
 
 <style lang='scss' scoped>
 .container-page-title {
-  padding: 16px 8px;
+  padding: 16px 16px;
   font-size: 32px;
   font-weight: 900;
   letter-spacing: -0.6px;
@@ -29,6 +29,11 @@ export default {
     width: 60px;
     height: 48px;
     border-bottom: 4px solid $b300;
+  }
+}
+@media ( max-width: 768px ) {
+  .container-page-title {
+    padding: 16px 24px;
   }
 }
 </style>
