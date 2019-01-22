@@ -5,10 +5,10 @@
     </div>
     <div class="title">
       {{ contents.title }}
-      <span class="position">/ {{ contents.position }} </span>
+      <span class="sub-title">/ {{ contents.subTitle }} </span>
     </div>
-    <div class="period">
-      {{ contents.period }}
+    <div class="desc">
+      {{ contents.desc }}
     </div>
   </div>
 </template>
@@ -19,7 +19,10 @@ export default {
   props: {
     contents: {
       type: Object,
-    }
+    },
+    type: {
+      type: String,
+    },
   },
   data() {
     return {
@@ -31,7 +34,7 @@ export default {
   },
   methods: {
     toDetail() {
-      this.$router.push('/Career/' + this.contents.route);
+      this.$router.push(`/${this.type}/${this.contents.route}`);
     },
     toggleModal() {
       const payload = {
@@ -78,7 +81,7 @@ export default {
     margin-top: 8px;
     font-size: 18px;
     color: $b300;
-    .position {
+    .sub-title {
       font-size: 14px;
       color: $b100;
     }
@@ -87,7 +90,7 @@ export default {
     font-size: 14px;
     color: $b100;
   }
-  .period {
+  .desc {
     font-size: 12px;
     color: $b50;
   }

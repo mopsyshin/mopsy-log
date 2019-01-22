@@ -3,6 +3,7 @@
     <page-title title="Project"/>
     <div class="card-list">
       <list-card-item v-for="project in ProjectData"
+                      type="Project"
                       :key="project.index"
                       :contents="project"
                       />

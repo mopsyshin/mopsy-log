@@ -3,6 +3,7 @@
     <page-title title="Career"/>
     <div class="card-list">
       <list-card-item v-for="career in careers"
+                      type="Career"
                       :key="career.index"
                       :contents="career"
                       />

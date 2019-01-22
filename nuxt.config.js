@@ -48,7 +48,7 @@ module.exports = {
     { src: '~assets/css/main.scss', lang: 'scss'}
   ],
   modules: [
-    [ 'nuxt-sass-resources-loader', path.resolve(__dirname, 'assets/css/variables.scss') ],
+    [ 'nuxt-sass-resources-loader', path.resolve(__dirname, 'assets/css/main.scss') ],
     '@nuxtjs/markdownit',
   ],
   markdownit: {
