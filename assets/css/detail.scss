@@ -3,7 +3,7 @@
   max-width: 768px;
   min-height: calc(100vh - 120px);
   margin: 0 auto 60px;
-  padding: 64px 28px;
+  padding: 64px 28px 128px;
   font-size: 16px;
   .title {
     font-size: 36px;
@@ -68,7 +68,7 @@
 @media (max-width:420px) {
   .container-detail {
     margin: 0 auto;
-    padding: 32px 24px;
+    padding: 32px 24px 128px;
     .title {
       font-size: 28px;
     }
