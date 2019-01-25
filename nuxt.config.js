@@ -9,7 +9,15 @@ module.exports = {
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no'},
-      {hid: 'description', name: 'description', content: 'mopsy&apos;s design&dev log'}
+      {hid: 'description', name: 'description', content: 'mopsy&apos;s design&dev log'},
+      {property: "og:url", content: "mopsiology.firebaseapp.com"},
+      {property: "og:title", content: "Mopsiology"},
+      {property: "og:description", content: "Design X Technology"},
+      {property: "og:image", content: "https://mopsyshin.github.io/images/web-cover.jpg"},
+      {property: "og:image:type", content: "image/jpg"},
+      {property: "og:image:width", content: "400px"},
+      {property: "og:image:height", content: "300px"},
+      {name: "apple-mobile-web-app-capable", content: "yes"},
     ],
     link: [
       {rel: 'icon', type: 'image/png', href: '/logo_m.png'}
