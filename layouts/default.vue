@@ -21,6 +21,7 @@ import DetailModal from '~/components/detail-modal/DetailModal';
 
 export default {
   name: "NavHeader",
+  scrollToTop: true,
   components: {
     Gnb,
     DetailModal,
@@ -47,12 +48,7 @@ export default {
   border: 12px solid $nd04;
 }
 .fixed-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
+  position: relative;
   z-index: 1;
 }
 .layout-container {
@@ -62,6 +58,7 @@ export default {
 }
 .main-container {
   padding-top: 60px;
+  padding-bottom: 120px;
 }
 
 @media (max-width: 1280px) {

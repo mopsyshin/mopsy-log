@@ -8,7 +8,7 @@
     </div>
     <div class="bar"></div>
     <div class="container-canvas">
-      <canvas id="canvas1" height="600" :width="canvasWidth" ref="canvas">This browser doesn't support canvas</canvas>
+      <canvas id="canvas1" height="600" :width="canvasWidth" ref="canvas" @click="addCircle">This browser doesn't support canvas</canvas>
     </div>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
       canvasWidth: 0,
       canvas: null,
       ctx: null,
-      density: 50,
+      density: 20,
       particles: [],
       Particle: function(scale, color, vx, vy, gv, canvas, ctx) {
         this.scale = scale;
@@ -36,13 +36,13 @@ export default {
             x: 0,
             y: 0
         };
-        this.draw = function() {
+        this.draw = () => {
           ctx.beginPath();
           ctx.arc(this.position.x, this.position.y, this.scale, 0, 2*Math.PI, false);
           ctx.fillStyle = this.color;
           ctx.fill();
         };
-        this.update = function() {
+        this.update = () => {
           this.vy += this.gv;
           this.position.x += this.vx;
           this.position.y += this.vy;
@@ -57,15 +57,19 @@ export default {
     };
   },
   mounted() {
-    if (window.innerWidth > 768) {
-      this.canvasWidth = 712;
-    } else {
-      this.canvasWidth = window.innerWidth - 48;
-    }
+    this.init();
+  },
+  methods: {
 
-    this.$nextTick(() => {
-      window.requestAnimFrame = (function(){
-        return  window.requestAnimationFrame   ||
+    init() {
+      if (window.innerWidth > 768) {
+        this.canvasWidth = 712;
+      } else {
+        this.canvasWidth = window.innerWidth - 48;
+      }
+      this.$nextTick(() => {
+        window.requestAnimFrame = (function(){
+          return window.requestAnimationFrame   ||
           window.webkitRequestAnimationFrame ||
           window.mozRequestAnimationFrame    ||
           window.oRequestAnimationFrame      ||
@@ -73,41 +77,49 @@ export default {
           function(callback){
             window.setTimeout(callback, 1000 / 60);
           };
-      })();
+        })();
 
-      this.canvas = this.$refs.canvas;
-      this.ctx = this.canvas.getContext('2d');
+        this.canvas = this.$refs.canvas;
+        this.ctx = this.canvas.getContext('2d');
 
-      for (let i = 0; i < this.density; i++) {
-          const r = ~~(Math.random()*255);
-          const g = this.toPositive(r - (~~(Math.random()*150)));
-          const b = this.toPositive(g - (~~(Math.random()*30)));
-          const color = `rgb(${r},${g},${b})`;
-          const scale = ~~(Math.random()*15)+3;
-          const x = Math.random() * 10 - 5;
-          const y = Math.random() * 9 + 4;
-          const gravity = Math.random() * 0.2 + 0.3;
-          
-          this.particles[i] = new this.Particle(scale, color, x, -y, gravity, this.canvas, this.ctx);
-          this.particles[i].position.x = this.canvas.width / 2;
-          this.particles[i].position.y = 200;
-      }
+        for (let i = 0; i < this.density; i++) {
+          this.makeCircle(this.canvas.width / 2, 200);
+        }
       this.loop();
-    });
-  },
-  methods: {
-    toPositive(v) {
-      if (v < 0) {
-        return -v;
-      }
-      return v;
+      });
     },
-    loop() {
+    delay(i) {
+      return new Promise((resolve, reject) => {
+        this.particles[i].update();
+      });
+    },
+    makeCircle(posX, posY) {
+      const color = `rgb(${this.makeRandom(150, 255)},${this.makeRandom(150, 255)},${this.makeRandom(150, 255)})`;
+      const scale = ~~(Math.random()*15)+3;
+      const x = Math.random() * 10 - 5;
+      const y = Math.random() * 9 + 4;
+      const g = Math.random() * 0.2 + 0.3;
+      let newParticle = new this.Particle(scale, color, x, -y, g, this.canvas, this.ctx);
+      newParticle.position.x = posX;
+      newParticle.position.y = posY;
+      this.particles.push(newParticle);
+    },
+
+    addCircle(event) {
+      this.makeCircle(event.layerX, event.layerY);
+    },
+
+    async loop() {
       requestAnimFrame(this.loop);
       this.ctx.clearRect(0,0, this.ctx.canvas.width, this.ctx.canvas.height);
       for (var i in this.particles) {
-        this.particles[i].update();
+        this.delay(i);
       }
+    },
+
+    makeRandom(min, max){
+      const RandVal = Math.random() * (max - min) + min;
+      return Math.floor(RandVal);
     },
   },
   components: {
