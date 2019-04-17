@@ -1,6 +1,7 @@
 import colorImg from '~/assets/images/color.png';
 import slideImg from '~/assets/images/slide.png';
 import canvasImg from '~/assets/images/canvas.png';
+import blogImg from '~/assets/images/blog.png';
 
 const projects = [
   {
@@ -9,6 +10,13 @@ const projects = [
     "imgUrl": slideImg,
     "subTitle": "vue",
     "desc": "Simple Slideshow for Presentation",
+  },
+  {
+    "title": "Mopsy Blog",
+    "route": "MopsyBlog",
+    "imgUrl": blogImg,
+    "subTitle": "vue, firebase",
+    "desc": "Personal Blog",
   },
   {
     "title": "Color Composer",

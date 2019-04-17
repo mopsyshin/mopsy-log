@@ -114,6 +114,20 @@ export default {
       }
     }
   }
-}
+} .test-link {
+    transition: all 0.5s;
+    color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    padding: 0px 16px 2px;
+    border-radius: 24px;
+  }
+  .test-link:hover {
+    background-color: rgba(0,0,0,0.04);
+    color: rgba(0,0,0,0.8);
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+    transform: scale(1.12);
+  }
 </style>
 
