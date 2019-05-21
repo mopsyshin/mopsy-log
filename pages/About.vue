@@ -53,6 +53,7 @@ import NuxtImg from '~/assets/images/nuxt.png';
 import NodeImg from '~/assets/images/node.png';
 import TsImg from '~/assets/images/typescript.png';
 import KotlinImg from '~/assets/images/kotlin.png';
+import ReactImg from '~/assets/images/react.png';
 
 export default {
   data() {
@@ -93,8 +94,14 @@ export default {
         {
           name: 'Vue.js',
           imgUrl: VueImg,
-          rank: 6,
+          rank: 7,
           color: '#41b883',
+        },
+        {
+          name: 'React.js',
+          imgUrl: ReactImg,
+          rank: 4,
+          color: '#61dafb',
         },
         {
           name: 'Nuxt.js',
@@ -105,13 +112,13 @@ export default {
         {
           name: 'Node.js',
           imgUrl: NodeImg,
-          rank: 2,
+          rank: 3,
           color: '#83cd29',
         },
                 {
           name: 'TypeScript',
           imgUrl: TsImg,
-          rank: 2,
+          rank: 3,
           color: '#2874c3',
         },
         // {

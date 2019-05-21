@@ -63,7 +63,7 @@ export default {
   methods: {
     toUrl(path) {
       if (path === 'Blog') {
-        window.open('https://velog.io/@mopsy');
+        window.open('https://mopsy-blog.firebaseapp.com/');
         return false;
       }
       this.$router.push(`/${path}`);
