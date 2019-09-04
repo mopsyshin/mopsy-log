@@ -2,8 +2,16 @@ import colorImg from '~/assets/images/color.png';
 import slideImg from '~/assets/images/slide.png';
 import canvasImg from '~/assets/images/canvas.png';
 import blogImg from '~/assets/images/blog.png';
+import galleryImg from '~/assets/images/gallery.png';
 
 const projects = [
+  {
+    "title": "UI Gallery",
+    "route": "UiGallery",
+    "imgUrl": galleryImg,
+    "subTitle": "react",
+    "desc": "UX Engineering Portfolio",
+  },
   {
     "title": "Simple Slide",
     "route": "SimpleSlide",

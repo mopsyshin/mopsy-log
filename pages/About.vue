@@ -100,7 +100,7 @@ export default {
         {
           name: 'React.js',
           imgUrl: ReactImg,
-          rank: 4,
+          rank: 7,
           color: '#61dafb',
         },
         {
