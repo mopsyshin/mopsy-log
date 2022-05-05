@@ -7,10 +7,16 @@
         Mopsy
       </h2>
       <p>
-        서비스 기획 - 디자인 - 개발 전 과정에 적극적으로 참여하는 것을 즐기고, 혼자서 MVP를 만들 수 있는 역량을 갖추는 것이 1차 목표. 2014년부터 다양한 규모의 스타트업에서 디자이너로 활동하였으며, 2018년부터는 프론트엔드 개발을 병행하여 현재는 와인포인트에서 UX/UI Designer 겸 Frontend Developer로 일하고 있다.
+        2014년부터 다양한 규모의 스타트업에서 디자이너로 활동하였으며, 2018년부터는 프론트엔드 개발을 병행하여 현재는 (주)페어스퀘어랩 에서 대체자산 투자 플랫폼 'Twig' 를 개발하고 있습니다.
       </p>
       <p>
-        어떤 상황이든 문제를 파악하고 해결하기 위한 최적이 아닌 최선의 방법을 찾으려 노력하며, 다양한 사람들 간의 활발하고 장벽없는 커뮤니케이션이 그것을 가능하게 해줄 것이라는 믿음을 갖고 있다.
+        엔지니어링을 디자인의 연장선 상에서 바라보고, 웹 기술의 가능성을 높게 생각합니다. 네이티브 앱과 비슷한 수준의 경험을 웹으로 구현하는 것에 재미를 느낍니다.
+      </p>
+      <p>
+        기술 자체에도 관심이 있지만 어떤 비즈니스를 내가 가진 기술로 어떻게 풀어낼 것인가에 관심이 많고, 항상 창업하기 위해 경험을 쌓는다는 생각으로 일합니다.
+      </p>
+      <p>
+        어떤 상황이든 문제를 파악하고 해결하기 위해 단순한 절충이 아닌 최선의 방법을 찾으려 노력하며, 다양한 사람들 간의 신뢰 위에서 이루어지는 활발하고 장벽없는 커뮤니케이션이 그것을 가능하게 해줄 것이라는 믿음을 갖고 있습니다.
       </p>
       <div class="links">
         <p>
@@ -20,21 +26,6 @@
         <a href="https://www.facebook.com/mopsyshin" target="blank">Facebook</a>
         <a href="https://www.instagram.com/mopsyshin/" target="blank">Instagram</a>
       </div>
-      <div class="abilities">
-        <div class="skill">
-          <h3>Programming Skillset</h3>
-          <rank-meter v-for="tool in programmingSkills"
-                      :key="tool.key"
-                      :tool="tool"/>
-        </div>
-        <div class="skill">
-          <h3>Graphic Tools</h3>
-          <rank-meter v-for="tool in graphicTools"
-                      :key="tool.key"
-                      :tool="tool"/>
-        </div>
-      </div>
-      <br/>
     </div>
   </div>
   </div>

@@ -1,18 +1,36 @@
 import wpImg from '~/assets/images/winepoint.png';
 import yeogiImg from '~/assets/images/yeogi.png';
 import redotImg from '~/assets/images/redot.png';
-import literImg from '~/assets/images/08Liter.png';
+import literImg from '~/assets/images/08liter.png';
 import modooImg from '~/assets/images/modoo.png';
 import bbuzzartImg from '~/assets/images/bbuzzart.png';
+import groschoolImg from '~/assets/images/groschool.png';
+import twigImg from '~/assets/images/twig.png';
 
 const career = [
+  {
+    "title": "Twig",
+    "route": "Twig",
+    "imgUrl": twigImg,
+    "link": "https://twig.money/",
+    "subTitle": "Frontend Developer",
+    "desc": "2021.03 ~",
+  },
+  {
+    "title": "Groschool",
+    "route": "Groschool",
+    "imgUrl": groschoolImg,
+    "link": "https://groschool.kr/",
+    "subTitle": "Frontend Developer",
+    "desc": "2019.10 ~ 2021.03",
+  },
   {
     "title": "Winepoint",
     "route": "Winepoint",
     "imgUrl": wpImg,
     "link": "https://www.winepoint.co.kr/",
-    "subTitle": "UX Engineer",
-    "desc": "2018.09 ~",
+    "subTitle": "Frontend Developer",
+    "desc": "2018.09 ~ 2019.09",
   },
   {
     "title": "여기어때 액티비티",
