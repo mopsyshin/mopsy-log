@@ -37,16 +37,6 @@ module.exports = {
     vendor: [
       'vue2-touch-events',
     ],
-    extend(config, {isDev, isClient}) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    },
   },
   transition: {
     name: 'page',
@@ -56,21 +46,9 @@ module.exports = {
     { src: '~assets/css/main.scss', lang: 'scss'}
   ],
   modules: [
-    [ 'nuxt-sass-resources-loader', path.resolve(__dirname, 'assets/css/main.scss') ],
-    '@nuxtjs/markdownit',
+    [ '@nuxtjs/style-resources', 'nuxt-sass-resources-loader', path.resolve(__dirname, 'assets/css/main.scss') ],
   ],
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-    highlight: function (str, lang) {
-      if (lang && hljs.getLanguage(lang)) {
-        try {
-          return hljs.highlight(lang, str).value;
-        } catch (__) {}
-      }
-  
-      return ''; // use external default escaping
-    }
+  styleResources: {
+    scss: ['~assets/css/*.scss']
   }
 }
