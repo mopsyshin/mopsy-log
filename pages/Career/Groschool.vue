@@ -8,9 +8,9 @@
     </div>
     <div class="bar"></div>
     <div class="body">
-      <h3>
-        Frontend Developer
-      </h3>
+      <h2>
+        소개
+      </h2>
       <p>
         IT업계에서 일하는 비 개발자 직군들을 위한 커리어가이드 온라인 강의 서비스다.
       </p>
@@ -26,10 +26,22 @@
       <p>
         프론트엔드를 중심으로 디자인과 기획, 그리고 서버/인프라도 인수인계받아 관리하면서 서비스 전체를 관리하는 경험을 해볼 수 있었다.
       </p>
+      
+      <h2>Dev</h2>
       <p>
-        현재 Web에서 확인할 수 있다.
-        <br/><br/>
+        처음부터 마지막까지 혼자 개발해본 첫 상용 프로젝트다. 게다가 서버는 외주로 개발한 상태여서, 런칭 이후엔 서버도 인수인계받아 어느정도의 유지보수를 직접 해야만 했다. 다행히 서버는 Express로 되어 있어 새로운 언어를 익힐 필요는 없었지만, DynamoDB를 처음 써보는 터라 꽤 고생을 했다.
       </p>
+      <h3>큐레이션</h3>
+      <ul>
+        <li>그로스쿨 사용자 웹 클라이언트 개발</li>
+        <li>그로스쿨 CMS 클라이언트 개발</li>
+        <li>그로스쿨 서버 유지보수</li>
+        <li>그로스쿨 웹 기획 및 디자인</li>
+      </ul>
+      <p class="stack">
+        Next.js, React.js, MobX, Node.js, express, AWS Elastic Beanstalk, AWS Dynamo DB, AWS EC2, Github, Figma
+      </p>
+      <br/>
       <p>
         <a href="https://groschool.kr/" target="_blank">그로스쿨 Web</a>
       </p>

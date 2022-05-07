@@ -214,6 +214,9 @@ button {
       max-height: 500px;
     }
   }
+  .stack {
+    font-size: 14px;
+  }
 }
 @media (max-width:420px) {
   .container-detail {
@@ -224,6 +227,9 @@ button {
     }
     .body {
       font-size: 15px;
+    }
+    .stack {
+      font-size: 13px;
     }
   }
 }

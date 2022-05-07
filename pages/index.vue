@@ -9,8 +9,8 @@
           Mopsy
         </div>
         <div class="desc">
-          UI / UX Designer<br/>
           Front-end Developer<br/>
+          UI / UX Designer<br/>
           Service Builder
         </div>
       </div>
