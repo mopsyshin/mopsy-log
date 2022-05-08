@@ -33,97 +33,10 @@
 
 <script>
 import PageTitle from '~/components/PageTitle';
-import RankMeter from '~/components/rank-meter/RankMeter';
-import SketchImg from '~/assets/images/sketch.png';
-import IllustratorImg from '~/assets/images/illustrator.png';
-import PhotoshopImg from '~/assets/images/photoshop.png';
-import AfterImg from '~/assets/images/after.png';
-import JsImg from '~/assets/images/js.png';
-import VueImg from '~/assets/images/vue.png';
-import NuxtImg from '~/assets/images/nuxt.png';
-import NodeImg from '~/assets/images/node.png';
-import TsImg from '~/assets/images/typescript.png';
-import KotlinImg from '~/assets/images/kotlin.png';
-import ReactImg from '~/assets/images/react.png';
 
 export default {
-  data() {
-    return {
-      graphicTools: [
-        {
-          name: 'Sketch',
-          imgUrl: SketchImg,
-          rank: 9,
-          color: '#fdc002',
-        },
-        {
-          name: 'Illustrator',
-          imgUrl: IllustratorImg,
-          rank: 8,
-          color: '#ff7c00',
-        },
-        {
-          name: 'Photoshop',
-          imgUrl: PhotoshopImg,
-          rank: 8,
-          color: '#00c8ff',
-        },
-        {
-          name: 'After Effect',
-          imgUrl: AfterImg,
-          rank: 5,
-          color: '#d291ff',
-        },
-      ],
-      programmingSkills: [
-        {
-          name: 'Js (ES5, ES6, ES7)',
-          imgUrl: JsImg,
-          rank: 6,
-          color: '#f0db4f',
-        },
-        {
-          name: 'Vue.js',
-          imgUrl: VueImg,
-          rank: 7,
-          color: '#41b883',
-        },
-        {
-          name: 'React.js',
-          imgUrl: ReactImg,
-          rank: 7,
-          color: '#61dafb',
-        },
-        {
-          name: 'Nuxt.js',
-          imgUrl: NuxtImg,
-          rank: 4,
-          color: '#3b8070',
-        },
-        {
-          name: 'Node.js',
-          imgUrl: NodeImg,
-          rank: 3,
-          color: '#83cd29',
-        },
-                {
-          name: 'TypeScript',
-          imgUrl: TsImg,
-          rank: 3,
-          color: '#2874c3',
-        },
-        // {
-        //   name: 'Kotlin',
-        //   imgUrl: KotlinImg,
-        //   rank: 1,
-        //   color: '#7e6fe3',
-        // },
-      ],
-    };
-  },
   components: {
     PageTitle,
-    RankMeter
   },
 };
 

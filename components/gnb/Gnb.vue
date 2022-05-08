@@ -44,7 +44,6 @@ export default {
     return {
       gnbState: false,
       gnbMenuItems: [
-        'About',
         'Career',
         'Project',
         'Blog',

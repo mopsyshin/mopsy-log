@@ -1,7 +1,6 @@
 <template>
   <div class="gnb-menu-container">
     <div class="wrapper-main-links">
-      <btn-main-link name="About"/>
       <btn-main-link name="Career"/>
       <btn-main-link name="Project"/>
       <btn-main-link name="Blog"/>
