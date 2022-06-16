@@ -51,7 +51,7 @@
       </ul>
 
       <p class="stack">
-        Next.js, React.js, MobX, Recoil, TypeScript, Firebase, Node.js, Vercel, Github, Figma, Photoshop
+        Next.js, React.js, MobX, react-query, Recoil, TypeScript, Firebase, Node.js, Vercel, Github, Figma, Photoshop
       </p>
       
       <br/>
